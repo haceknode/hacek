@@ -4,10 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HACEK – Yaratıcılığın ve Kodun Kesişim Noktası</title>
+    <link rel="icon" type="image/png" href="pp.png">
     <link rel="stylesheet" href="style.css">
     <script defer src="main.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .rounded-title {
+            display: inline-block;
+            background: #fff;
+            color: #2563eb;
+            border-radius: 50%;
+            padding: 32px 48px;
+            font-size: 2.2rem;
+            font-weight: 700;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            margin-bottom: 0.5rem;
+            border: 4px solid #2563eb;
+            letter-spacing: 2px;
+        }
+        @media (max-width: 600px) {
+            .rounded-title {
+                font-size: 1.3rem;
+                padding: 18px 22px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header class="profile-header">
@@ -15,7 +37,9 @@
             <!-- Profil fotoğrafı eklemek için aşağıdaki img src'yi değiştirin -->
             <img src="pp.png" alt="HACEK Profil Fotoğrafı">
         </div>
-        <h1>HACEK</h1>
+        <div style="text-align:center;">
+            <span class="rounded-title">HACEK</span>
+        </div>
         <p>Yaratıcılığın ve Kodun Kesişim Noktası</p>
         <div class="social-links">
             <a href="https://github.com/haceknode" target="_blank" aria-label="GitHub"><img src="icons/github.svg" alt="GitHub"></a>
