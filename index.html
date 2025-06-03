@@ -4,32 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HACEK – Yaratıcılığın ve Kodun Kesişim Noktası</title>
-    <link rel="icon" type="image/png" href="pp.png">
     <link rel="stylesheet" href="style.css">
     <script defer src="main.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        .rounded-title {
-            display: inline-block;
-            background: #fff;
-            color: #2563eb;
-            border-radius: 50%;
-            padding: 32px 48px;
-            font-size: 2.2rem;
-            font-weight: 700;
-            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-            margin-bottom: 0.5rem;
-            border: 4px solid #2563eb;
-            letter-spacing: 2px;
-        }
-        @media (max-width: 600px) {
-            .rounded-title {
-                font-size: 1.3rem;
-                padding: 18px 22px;
-            }
-        }
-    </style>
 </head>
 <body>
     <header class="profile-header">
@@ -37,9 +15,7 @@
             <!-- Profil fotoğrafı eklemek için aşağıdaki img src'yi değiştirin -->
             <img src="pp.png" alt="HACEK Profil Fotoğrafı">
         </div>
-        <div style="text-align:center;">
-            <span class="title">HACEK</span>
-        </div>
+        <h1>HACEK</h1>
         <p>Yaratıcılığın ve Kodun Kesişim Noktası</p>
         <div class="social-links">
             <a href="https://github.com/haceknode" target="_blank" aria-label="GitHub"><img src="icons/github.svg" alt="GitHub"></a>
@@ -60,33 +36,33 @@
                 font-weight: bold;
                 font-size: 1.1rem;
                 background: #fff;
-                color: #222;
+                color: #2563eb;
                 text-decoration: none;
-                box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+                box-shadow: 0 2px 12px #fff;
                 transition: transform 0.15s;
                 cursor: pointer;
             ">
-                <span style="color:#ff4b2b;">h</span>
-                <span style="color:#ff9800;">a</span>
-                <span style="color:#f9d423;">c</span>
-                <span style="color:#4caf50;">e</span>
-                <span style="color:#00bcd4;">k</span>
-                <span style="color:#3f51b5;">n</span>
-                <span style="color:#9c27b0;">o</span>
-                <span style="color:#e91e63;">d</span>
-                <span style="color:#607d8b;">e</span>
-                <span style="color:#222;">@</span>
-                <span style="color:#ff4b2b;">g</span>
-                <span style="color:#ff9800;">m</span>
-                <span style="color:#f9d423;">a</span>
-                <span style="color:#4caf50;">i</span>
-                <span style="color:#00bcd4;">l</span>
-                <span style="color:#222;">.</span>
-                <span style="color:#3f51b5;">c</span>
-                <span style="color:#9c27b0;">o</span>
-                <span style="color:#e91e63;">m</span>
+                <span style="color:#2563eb;">h</span>
+                <span style="color:#2563eb;">a</span>
+                <span style="color:#2563eb;">c</span>
+                <span style="color:#2563eb;">e</span>
+                <span style="color:#2563eb;">k</span>
+                <span style="color:#2563eb;">n</span>
+                <span style="color:#2563eb;">o</span>
+                <span style="color:#2563eb;">d</span>
+                <span style="color:#2563eb;">e</span>
+                <span style="color:#2563eb;">@</span>
+                <span style="color:#2563eb;">g</span>
+                <span style="color:#2563eb;">m</span>
+                <span style="color:#2563eb;">a</span>
+                <span style="color:#2563eb;">i</span>
+                <span style="color:#2563eb;">l</span>
+                <span style="color:#2563eb;">.</span>
+                <span style="color:#2563eb;">c</span>
+                <span style="color:#2563eb;">o</span>
+                <span style="color:#2563eb;">m</span>
             </a>
-            <span id="mail-copy-result" style="margin-left:10px;color:#2563eb;font-weight:bold;display:none;">Mutlaka bana ulaşın!</span>
+            <span id="mail-copy-result" style="margin-left:10px;color:#fff;font-weight:bold;display:none;">Bana mutlaka ulaşın! Size yardımcı olmak isterim</span>
         </div>
     </header>
 
@@ -174,7 +150,7 @@
         navigator.clipboard.writeText('haceknode@gmail.com');
         const result = document.getElementById('mail-copy-result');
         result.style.display = 'inline';
-        result.textContent = 'Mutlaka bana ulaşın!';
+        result.textContent = 'Bana mutlaka ulaşın! Size yardımcı olmak isterim';
         setTimeout(() => { result.style.display = 'none'; }, 1800);
     }
     </script>
