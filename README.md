@@ -1,11 +1,11 @@
 # hacek
 Yazılım dünyasının büyüleyici kapılarını aralayalı tam 5 yıl oldu. Bu süreçte yalnızca kod yazmakla kalmadım; her satır kodu birer sanat eserine, her proje brief’ini birer marka hikayesine dönüştürmeyi kendime ilke edindim. Ben HACEK. Gerçek adımı duymayabilirsiniz, ama işlerimi gördüğünüzde aklınızda kalırım.
 
-🚀  Uzmanlık Alanlarım
-🚀  Full-Stack Yazılım Geliştirme
-🚀  UI/UX ve Grafik Tasarımı
-🚀  Yapay Zekâ ve Makine Öğrenimi
-🚀  Kurumsal Dijital Dönüşüm Danışmanlığı
+#🚀  Uzmanlık Alanlarım
+#🚀  Full-Stack Yazılım Geliştirme
+#🚀  UI/UX ve Grafik Tasarımı
+#🚀  Yapay Zekâ ve Makine Öğrenimi
+#🚀  Kurumsal Dijital Dönüşüm Danışmanlığı
 
 
  Grafik Tasarım ile Fark Yaratmak
