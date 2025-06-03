@@ -1,0 +1,194 @@
+:root {
+    --main-blue: #2563eb;
+    --light-blue: #3b82f6;
+    --dark-blue: #1e40af;
+    --card-bg: #f0f6ff;
+    --white: #fff;
+    --shadow: 0 2px 16px rgba(37,99,235,0.08);
+    --radius: 18px;
+    --text: #1e293b;
+    --gray: #64748b;
+}
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: linear-gradient(135deg, var(--main-blue) 0%, var(--light-blue) 100%);
+    margin: 0;
+    color: var(--text);
+    min-height: 100vh;
+}
+
+header.profile-header {
+    text-align: center;
+    padding: 2.5rem 1rem 1.5rem 1rem;
+    background: var(--main-blue);
+    color: var(--white);
+}
+
+.profile-pic {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 1rem auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid var(--light-blue);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    background: var(--white);
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-header h1 {
+    margin: 0.5rem 0 0.2rem 0;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+}
+
+.profile-header p {
+    margin: 0 0 1rem 0;
+    font-size: 1.1rem;
+    color: #dbeafe;
+}
+
+.social-links {
+    margin: 1rem 0 0 0;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 0.5rem;
+    transition: transform 0.2s;
+}
+
+.social-links img {
+    width: 32px;
+    height: 32px;
+    filter: brightness(0) invert(1);
+}
+
+.social-links a:hover {
+    transform: scale(1.15);
+}
+
+main {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+    padding: 2rem 1.5rem;
+    transition: box-shadow 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 32px rgba(37,99,235,0.13);
+}
+
+.card h2 {
+    color: var(--main-blue);
+    margin-top: 0;
+}
+
+.card h3 {
+    color: var(--dark-blue);
+    margin-bottom: 0.5rem;
+}
+
+.card ul, .card ol {
+    margin-left: 1.2rem;
+}
+
+.card ul li, .card ol li {
+    margin-bottom: 0.3rem;
+}
+
+.contact .email-info {
+    margin-top: 1.2rem;
+    color: var(--gray);
+}
+
+form#contactForm {
+    margin-top: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1.1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+    color: var(--dark-blue);
+}
+
+input[type="text"], input[type="tel"], textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1.5px solid var(--light-blue);
+    border-radius: 8px;
+    font-size: 1rem;
+    background: var(--white);
+    color: var(--text);
+    box-sizing: border-box;
+    transition: border 0.2s;
+}
+
+input[type="text"]:focus, input[type="tel"]:focus, textarea:focus {
+    border-color: var(--main-blue);
+    outline: none;
+}
+
+button[type="submit"] {
+    background: var(--main-blue);
+    color: var(--white);
+    border: none;
+    padding: 0.8rem 2.2rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 0.5rem;
+}
+
+button[type="submit"]:hover {
+    background: var(--dark-blue);
+}
+
+#formResult {
+    margin-top: 1rem;
+    font-weight: 600;
+    color: var(--main-blue);
+}
+
+footer {
+    text-align: center;
+    padding: 1.2rem 0;
+    background: var(--dark-blue);
+    color: var(--white);
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 1rem 0.3rem;
+    }
+    .card {
+        padding: 1.2rem 0.7rem;
+    }
+    .profile-pic {
+        width: 90px;
+        height: 90px;
+    }
+}
