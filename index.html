@@ -21,9 +21,48 @@
             <a href="https://github.com/haceknode" target="_blank" aria-label="GitHub"><img src="icons/github.svg" alt="GitHub"></a>
             <a href="https://www.linkedin.com/in/hacek-phoenix" target="_blank" aria-label="LinkedIn"><img src="icons/linkedin.svg" alt="LinkedIn"></a>
             <a href="https://instagram.com/hacek" target="_blank" aria-label="Instagram"><img src="icons/instagram.svg" alt="Instagram"></a>
-            <a href="#" onclick="navigator.clipboard.writeText('0x4455384F7fE32dFBfb6F52f9D368caf376527F0D');return false;" aria-label="ETH Bağış Adresi" title="ETH Bağış Adresi: 0x4455384F7fE32dFBfb6F52f9D368caf376527F0D">
+            <a href="#" id="eth-copy" onclick="copyAddress('eth');return false;" aria-label="ETH Bağış Adresi" title="ETH Bağış Adresi: 0x4455384F7fE32dFBfb6F52f9D368caf376527F0D">
                 <img src="icons/eth.svg" alt="ETH">
             </a>
+            <a href="#" id="sol-copy" onclick="copyAddress('sol');return false;" aria-label="Solana Bağış Adresi" title="Solana Bağış Adresi: 4chQqF7hHPkkuep8j4okfLc4qAehZ5XeVP2P8QLd7tvH">
+                <img src="icons/solana-gradient.svg" alt="Solana">
+            </a>
+        </div>
+        <div style="margin-top:18px; text-align:center;">
+            <a href="#" id="mail-copy" onclick="copyMail();return false;" style="
+                display:inline-block;
+                padding: 8px 20px;
+                border-radius: 24px;
+                font-weight: bold;
+                font-size: 1.1rem;
+                background: #fff;
+                color: #222;
+                text-decoration: none;
+                box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+                transition: transform 0.15s;
+                cursor: pointer;
+            ">
+                <span style="color:#ff4b2b;">h</span>
+                <span style="color:#ff9800;">a</span>
+                <span style="color:#f9d423;">c</span>
+                <span style="color:#4caf50;">e</span>
+                <span style="color:#00bcd4;">k</span>
+                <span style="color:#3f51b5;">n</span>
+                <span style="color:#9c27b0;">o</span>
+                <span style="color:#e91e63;">d</span>
+                <span style="color:#607d8b;">e</span>
+                <span style="color:#222;">@</span>
+                <span style="color:#ff4b2b;">g</span>
+                <span style="color:#ff9800;">m</span>
+                <span style="color:#f9d423;">a</span>
+                <span style="color:#4caf50;">i</span>
+                <span style="color:#00bcd4;">l</span>
+                <span style="color:#222;">.</span>
+                <span style="color:#3f51b5;">c</span>
+                <span style="color:#9c27b0;">o</span>
+                <span style="color:#e91e63;">m</span>
+            </a>
+            <span id="mail-copy-result" style="margin-left:10px;color:#2563eb;font-weight:bold;display:none;">Mutlaka bana ulaşın!</span>
         </div>
     </header>
 
@@ -89,35 +128,31 @@
                 Yalnızca Türkiye'de değil, global ölçekte tanınan bir dijital üretici olmak. Ekibimi genişletmek, genç yeteneklere mentorluk yapmak ve yapay zekâyla insani değerleri harmanlayarak dijital geleceğe yön vermek istiyorum.
             </p>
         </section>
-
-        <section class="contact card">
-            <h2>📩 Senin Projen Sırada mı?</h2>
-            <p>
-                HACEK olarak fikirlerini dinlemek, markanı analiz etmek ve birlikte fark yaratmak için buradayım. İletişime geç ve hayalini birlikte tasarlayalım.
-            </p>
-            <form id="contactForm">
-                <div class="form-group">
-                    <label for="name">İsim Soyisim</label>
-                    <input type="text" id="name" name="name" required maxlength="50">
-                </div>
-                <div class="form-group">
-                    <label for="phone">Telefon</label>
-                    <input type="tel" id="phone" name="phone" required maxlength="20">
-                </div>
-                <div class="form-group">
-                    <label for="message">Açıklama</label>
-                    <textarea id="message" name="message" rows="4" required maxlength="500"></textarea>
-                </div>
-                <button type="submit">Gönder</button>
-                <div id="formResult"></div>
-            </form>
-            <div class="email-info">
-                <b>Mail:</b> <a href="mailto:haceknode@gmail.com">haceknode@gmail.com</a>
-            </div>
-        </section>
     </main>
     <footer>
         <p>&copy; 2024 HACEK. Tüm hakları saklıdır.</p>
     </footer>
+    <script>
+    function copyAddress(type) {
+        let address = '';
+        if (type === 'eth') {
+            address = '0x4455384F7fE32dFBfb6F52f9D368caf376527F0D';
+        } else if (type === 'sol') {
+            address = '4chQqF7hHPkkuep8j4okfLc4qAehZ5XeVP2P8QLd7tvH';
+        }
+        navigator.clipboard.writeText(address);
+        const result = document.getElementById('copy-result');
+        result.style.display = 'inline';
+        result.textContent = 'Kopyalandı!';
+        setTimeout(() => { result.style.display = 'none'; }, 1500);
+    }
+    function copyMail() {
+        navigator.clipboard.writeText('haceknode@gmail.com');
+        const result = document.getElementById('mail-copy-result');
+        result.style.display = 'inline';
+        result.textContent = 'Mutlaka bana ulaşın!';
+        setTimeout(() => { result.style.display = 'none'; }, 1800);
+    }
+    </script>
 </body>
 </html>
