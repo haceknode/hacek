@@ -83,14 +83,16 @@ main {
 .card {
     background: var(--card-bg);
     border-radius: var(--radius);
-    box-shadow: var(--shadow);
+    box-shadow: 0 2px 16px rgba(220, 38, 38, 0.13); /* kırmızı shadow */
     margin-bottom: 2rem;
     padding: 2rem 1.5rem;
-    transition: box-shadow 0.2s;
+    transition: box-shadow 0.2s, transform 0.2s;
 }
 
 .card:hover {
-    box-shadow: 0 4px 32px rgba(37,99,235,0.13);
+    box-shadow: 0 8px 32px rgba(220, 38, 38, 0.28); /* koyu kırmızı shadow */
+    transform: translateY(-4px) scale(1.025);
+    z-index: 2;
 }
 
 .card h2 {
